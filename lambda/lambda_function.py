@@ -1,8 +1,7 @@
 import json
 
-def lambda_hamdler(event, context):
+def lambda_handler(event, context):
     return {
-     'StatusCode': 200,
-     'body': json.dumps('Hello from CICD github actions worklow vs code')     
-       
-    } 
+        'statusCode': 200,
+        'body': 'Hello, World!'
+    }
