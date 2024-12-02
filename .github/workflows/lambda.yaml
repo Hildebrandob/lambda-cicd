@@ -24,10 +24,10 @@ jobs:
           pip install -r lambda/requirements.txt -t lambda/
 
       - name: Configure AWS Creds # sets up AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-2
 
       - name: Deploy Lambda Function # zips lambda directory and updates lambda function
