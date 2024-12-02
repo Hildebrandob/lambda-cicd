@@ -1,1 +1,1 @@
-{"errorMessage": "Handler 'lambda_handler' missing on module 'lambda_function'", "errorType": "Runtime.HandlerNotFound", "requestId": "", "stackTrace": []}
+{"statusCode": 200, "body": "Hello, World!"}

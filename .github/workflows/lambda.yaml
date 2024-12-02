@@ -8,6 +8,7 @@ on:
       - main
     paths:
       - "lambda/**"
+  workflow_dispatch:
 
 jobs:
   deploy-lambda:
