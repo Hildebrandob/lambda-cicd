@@ -33,7 +33,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-2
 
-      - name: Deploy to AWS Lambda
+      - name: Deploy to AWS Lambda #zips lambda directory and updates lambda function
         run: |
           cd lambda
           zip -r lambda.zip .
