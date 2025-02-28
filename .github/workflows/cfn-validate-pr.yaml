@@ -1,6 +1,5 @@
 name: Validate CloudFormation on PR
 
-# Minimal change for testing PR - updated comment.
 
 on: 
   pull_request:
