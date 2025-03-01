@@ -2,8 +2,6 @@ name: Validate CloudFormation on PR
 
 # minimal change to trigger pull request
 
-
-
 on: 
   pull_request:
     paths:
