@@ -1,5 +1,5 @@
 name: Validate CloudFormation on PR
-# Change required to enable requests
+
 on: 
   pull_request:
     paths:
@@ -21,10 +21,6 @@ jobs:
           aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
           aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           aws-region: eu-west-2
-
-      # Minimal change: Insert a comment to trigger re-deployment of the S3 bucket
-      - name: Trigger re-deployment
-        run: sed -i '1i # re-deploy trigger' cloudformation/s3-bucket.yaml
 
       - name: Validate CloudFormation template
         run: |
