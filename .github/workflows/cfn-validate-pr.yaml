@@ -1,5 +1,8 @@
 name: Validate CloudFormation on PR
 
+# minimum change to enable the deployment
+
+
 on: 
   pull_request:
     paths:
