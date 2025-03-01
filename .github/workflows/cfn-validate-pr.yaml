@@ -1,5 +1,5 @@
 name: Validate CloudFormation on PR
-
+# Change required to enable requests
 on: 
   pull_request:
     paths:
