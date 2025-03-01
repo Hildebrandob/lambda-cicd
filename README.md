@@ -1,0 +1,1 @@
+In this project, I will create a CI/CD pipeline for changes in a Lambda function. I will create a CI/CD workflow that is triggered every time that changes are pushed to a lambda function and updates it using github actions and will pull changes from one branch in github to the main branch.
